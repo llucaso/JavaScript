@@ -6,4 +6,8 @@ alert(value);
 
 console.log('wynik działania ' +  value);
 
-(value > 0) ? console.log('wynik dodatni') : (value < 0) ? console.log('wynik ujemny') : console.log('zero')
+if (value == 0) {
+	console.log('zero');
+} else {
+	(value > 0) ? console.log('wynik dodatni') : console.log('wynik ujemny')
+}
