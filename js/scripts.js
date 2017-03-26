@@ -1,11 +1,8 @@
-﻿function getTriangleArea(a,h) {
-	var wynik;
-	if ( (a <= 0) || (h <= 0)) {
-		wynik = 'Nieprawidłowe dane';
-	} else {
-		wynik = a*h/2;
+﻿function getTriangleArea(a, h) {
+	if (a <= 0 || h <= 0) {
+		return 'Nieprawidłowe dane';
 	}
-	return wynik;
+	return a * h / 2;
 }
 
 var triangle1Area = getTriangleArea(10,15);
