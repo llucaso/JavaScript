@@ -1,8 +1,10 @@
-﻿var txt = 'Ala ma kota, kot ma Alę';
-var indexKota = txt.indexOf('kot');
+﻿var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
+var animal = 'Zielone słonie';
+var animalUpperCased = animal.toUpperCase();
+var textCharsAfter = text.replace('Papugi', animalUpperCased);
+var newCharsAfter = textCharsAfter.substr(0, 45);
 
-if (indexKota == -1) {
-  console.log('kot nie występuje w tekście');
-} else {
-  console.log(txt[indexKota]);
-}
+console.log(newCharsAfter);
+
+
+
